@@ -9,7 +9,7 @@ exports.run = function(client, message, args) {
         return message.reply("Silmem için bir miktar belirt")
     } else {
     message.channel.bulkDelete(sayi);
-    message.channel.send("**" + sayi + "** adet mesaj sildim.").then (msg =>{
+    message.channel.send("**" + sayi + "** adet mesaj sildim. https://images-ext-1.discordapp.net/external/5DwLF5ijD2kgBZg-LXYQCu2ZrDdUmLYpDH71cM_jO24/https/cdn.pixabay.com/photo/2012/04/11/17/24/cleaning-29040_960_720.png").then (msg =>{
         msg.delete("5000")
     });
 }
