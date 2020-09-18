@@ -5,6 +5,7 @@ const chalk = require('chalk');
 const fs = require('fs');
 const moment = require('moment');
 require('./util/eventLoader')(client);
+const eco = require("discord-eco");
 
 var prefix = ayarlar.prefix;
 
@@ -127,5 +128,19 @@ client.on('warn', e => {
 client.on('error', e => {
   console.log(chalk.bgRed(e.replace(regToken, 'that was redacted')));
 });
+
+
+var d1 = Math.floor(Math.random() *7) + 3;
+var d2 = Math.floor(Math.random() *7) + 3;
+
+console.log(d1 + "," + d2)
+
+if(d1 === d2) {
+eco.updateBalance(message.author.id, d1).then(i => {
+message.reply(d1 + "TL kazandın!")
+})
+}
+
+
 
 client.login(process.env.BOT_TOKEN);
