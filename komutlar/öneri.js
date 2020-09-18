@@ -11,7 +11,7 @@ exports.run = function(client, message, args) {
   if(!öneri){
     return message.reply('Bir mesaj belirtin! **Doğru Kullanım**: -öneri <mesaj>');
   } else{
-    client.guilds.get(guildID).channels.get(channelID).send(kullanici + öneri);
+    client.guilds.get(guildID).channels.get(channelID).send(kullanici + " tarafından " + öneri + " önerisi gönderildi.");
   };
     
   
