@@ -7,7 +7,13 @@ exports.run = function(client, message, args) {
   var guildID = "499546891843928064";
   var channelID = "756494706510135307";
   
-  if(!öneri) return message.reply('Bir mesaj belirtin! **Doğru Kullanım**: -öneri <mesaj>')
+  if(!öneri){
+    return message.reply('Bir mesaj belirtin! **Doğru Kullanım**: -öneri <mesaj>');
+  } else{
+    client.guild.get(guildID).channel.get(channelID).send(öneri);
+  };
+    
+  
 };
 
 exports.conf = {
