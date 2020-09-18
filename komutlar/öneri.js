@@ -19,12 +19,12 @@ exports.run = function(client, message, args) {
 exports.conf = {
   enabled: true,
   guildOnly: false,
-  aliases: ["öner"],
+  aliases: ["öneri"],
   permLevel: 0
 };
 
 exports.help = {
-  name: 'öner', 
+  name: 'öneri', 
   description: "Bot hakkındaki önerilerinizi bot sahibine ulaştırır",
   usage: 'öneri <mesaj>'
 };
