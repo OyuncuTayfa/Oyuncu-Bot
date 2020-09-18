@@ -18,7 +18,6 @@ exports.run = function(client, message, args) {
     .addField("Kullanıcı : ", message.author.tag)
     .addField("ID : ", message.author.id)
     .addField("Öneri : ", öneri)
-    .addField("Gönderi zamanı : ", message.time)
     client.guilds.get(guildID).channels.get(channelID).send(embed);
     message.channel.send("Öneriniz iletilmiştir. Teşekkür ederiz.");
   };
