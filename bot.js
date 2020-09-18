@@ -7,6 +7,7 @@ const moment = require('moment');
 require('./util/eventLoader')(client);
 const eco = require("discord-eco");
 
+
 var prefix = ayarlar.prefix;
 
 const log = message => {
