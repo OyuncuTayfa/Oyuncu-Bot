@@ -12,6 +12,7 @@ exports.run = function(client, message, args) {
     return message.reply('Bir mesaj belirtin! **Doğru Kullanım**: -öneri <mesaj>');
   } else{
     client.guilds.get(guildID).channels.get(channelID).send(kullanici + " tarafından '" + öneri + "' önerisi gönderildi.");
+    message.channel.send("Öneriniz iletilmiştir. Teşekkür ederiz.");
   };
     
   
