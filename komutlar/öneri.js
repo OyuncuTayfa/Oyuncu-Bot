@@ -11,7 +11,20 @@ exports.run = function(client, message, args) {
   if(!öneri){
     return message.reply('Bir mesaj belirtin! **Doğru Kullanım**: -öneri <mesaj>');
   } else{
-    client.guilds.get(guildID).channels.get(channelID).send(kullanici + " tarafından '" + öneri + "' önerisi gönderildi.");
+    
+    var embed = new Discord.RichEmbed()
+    .setTimestamp()
+    .addField("Eylem : ", "Öneri")
+    .addField("Kullanıcı : ", message.author.tag)
+    .addField("ID : ", message.author.id)
+    .addField("Öneri : ", öneri)
+    
+    
+    
+    
+    
+    
+    client.guilds.get(guildID).channels.get(channelID).send(embed);
     message.channel.send("Öneriniz iletilmiştir. Teşekkür ederiz.");
   };
     
