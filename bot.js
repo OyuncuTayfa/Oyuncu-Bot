@@ -5,7 +5,8 @@ const chalk = require('chalk');
 const fs = require('fs');
 const moment = require('moment');
 require('./util/eventLoader')(client);
-const eco = require("discord-eco");
+const economy = require('discord-eco');
+
 
 
 var prefix = ayarlar.prefix;
@@ -137,7 +138,7 @@ var d2 = Math.floor(Math.random() *7) + 3;
 console.log(d1 + "," + d2)
 
 if(d1 === d2) {
-eco.updateBalance(message.author.id, d1).then(i => {
+economy.updateBalance(message.author.id, d1).then(i => {
 message.reply(d1 + "TL kazandın!")
 })
 }
