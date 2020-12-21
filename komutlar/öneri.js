@@ -8,6 +8,10 @@ exports.run = function(client, message, args) {
   var channelID = "756494706510135307";
   var kullanici = message.author
   
+  if(öneri.length > 1024) {
+    return message.reply("Lütfen 1024 karakter sınırını aşma!")
+  }
+  
   if(!öneri){
     return message.reply('Bir mesaj belirtin! **Doğru Kullanım**: -öneri <mesaj>');
   } else{
