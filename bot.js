@@ -85,7 +85,7 @@ client.unload = command => {
 
 client.on('message', msg => {
   if (msg.content.toLowerCase() === 'sa') {
-		if (!msg.guild.member(msg.author).have(Permission , BAN_MEMBERS)) {
+		if (!message.member.permissions.has("BAN_MEMBERS")) {
 			msg.author.sendMessage('Aleyküm selam,  hoş geldin.'); 
 		} else {
 		msg.reply('Aleyküm selam, hoş geldin.');
@@ -117,8 +117,8 @@ client.elevation = message => {
   if(!message.guild) {
 	return; }
   let permlvl = 0;
-  if (message.member.have(Permission , BAN_MEMBERS)) permlvl = 2;
-  if (message.member.have(Permission , ADMINISTRATOR)) permlvl = 3;
+  if (message.member.permissions.has("BAN_MEMBERS")) permlvl = 2;
+  if (message.member.permissions.has("ADMINISTRATOR")) permlvl = 3;
   if (message.author.id === ayarlar.sahip) permlvl = 4;
   return permlvl;
 };
