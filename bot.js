@@ -85,11 +85,7 @@ client.unload = command => {
 
 client.on('message', msg => {
   if (msg.content.toLowerCase() === 'sa') {
-		if (!message.member.permission.has("BAN_MEMBERS")) {
-			msg.author.sendMessage('Aleyküm selam,  hoş geldin.'); 
-		} else {
 		msg.reply('Aleyküm selam, hoş geldin.');
-		}
 	}
 });
 
