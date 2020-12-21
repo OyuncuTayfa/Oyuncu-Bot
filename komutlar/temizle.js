@@ -5,6 +5,10 @@ exports.run = function(client, message, args) {
     const sayi = args.slice(0).join(' ');
 
 
+    if(sayi.length > 100) {
+        return message.reply("Lütfen 1 ile 100 arasında bir rakam belirt!")
+    }
+    
     if(sayi.length < 1) {
         return message.reply("Silmem için bir miktar belirt")
     } else {
