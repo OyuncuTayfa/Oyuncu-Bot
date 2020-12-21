@@ -113,8 +113,6 @@ client.elevation = message => {
   if(!message.guild) {
 	return; }
   let permlvl = 0;
-  if (message.member.perms.has("BAN_MEMBERS")) permlvl = 2;
-  if (message.member.perms.has("ADMINISTRATOR")) permlvl = 3;
   if (message.author.id === ayarlar.sahip) permlvl = 4;
   return permlvl;
 };
