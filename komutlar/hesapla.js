@@ -11,7 +11,7 @@ exports.run = function(client, message, args) {
         try {
             cevap = math.eval(soru)
         } catch (error) {
-            message.channel.send('Hatalı işlem : **' + err)
+            message.channel.send('Hatalı işlem Yazdınız')
         } {
             
         }
