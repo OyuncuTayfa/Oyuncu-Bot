@@ -4,7 +4,7 @@ const Discord = require('discord.js');
 exports.run = function(client, message) {
 
     var embed = new Discord.RichEmbed()
-    .setColor(0xffd700)
+    .setColor(0x549fff)
     .addField("Deneme", "sa")
     .addField("as" , "hg")
     .addField("hb" , "deneme")
