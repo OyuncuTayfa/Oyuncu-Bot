@@ -4,7 +4,9 @@ const Discord = require('discord.js');
 exports.run = function(client, message) {
 
     var embed = new Discord.RichEmbed()
-    .addField("Deneme : ", "sa" , "as" , "hg" , "hb" , "deneme")
+    .addField("Deneme", "sa")
+    .addField("as" , "hg")
+    .addField("hb" , "deneme")
     message.channel.send(embed);
 };
 
