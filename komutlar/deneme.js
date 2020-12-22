@@ -11,12 +11,12 @@ exports.run = function(client, message) {
 exports.conf = {
   enabled: true, 
   guildOnly: false, 
-  aliases: ['ping','p'],
+  aliases: ['deneme'],
   permLevel: 0 
 };
 
 exports.help = {
-  name: 'ping', 
-  description: 'Botun pingini gösterir', 
-  usage: 'ping' 
+  name: 'deneme', 
+  description: 'Deneme', 
+  usage: 'deneme' 
 };
