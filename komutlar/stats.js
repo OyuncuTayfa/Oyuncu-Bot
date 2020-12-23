@@ -6,7 +6,7 @@ const os = require('os')
 exports.run = function(client, message, args) {
   module.exports = {
     kod: "stats",
-    if(message.content === '-stats') {
+    if(msg.content === '-stats') {
     var embed = new Discord.RichEmbed() 
       .setTitle('İstatistik')
       .addField('Kullanıcı Sayısı', client.users.cache.size)
