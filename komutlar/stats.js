@@ -4,9 +4,11 @@ require('moment-duration-format')
 const os = require('os')
 
 exports.run = function(client, message, args) {
+  var stat = args.slice(0).join(' ');
+  
   module.exports = {
     kod: "stats",
-    if(msg.content === '-stats') {
+    if(stat === 'all') {
     var embed = new Discord.RichEmbed() 
       .setTitle('İstatistik')
       .addField('Kullanıcı Sayısı', client.users.cache.size)
