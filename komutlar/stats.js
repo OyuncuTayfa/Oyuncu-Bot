@@ -13,7 +13,7 @@ exports.run = function(client, message, args) {
     .addField('Sunucu Sayısı', client.guilds.cache.size)
     .addField('Kanal Sayısı', client.channels.cache.size)
     message.channel.send(embed)
-  }
+  };
   }
 };
 
