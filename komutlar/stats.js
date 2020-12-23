@@ -8,14 +8,14 @@ exports.run = function(client, message, args) {
   
   module.exports = {
     kod: "stats",
-    if(stat.content === 'all') {
+    if(stat = 'all') {
     var embed = new Discord.RichEmbed() 
       .setTitle('İstatistik')
       .addField('Kullanıcı Sayısı', client.users.cache.size)
       .addField('Sunucu Sayısı', client.guilds.cache.size)
       .addField('Kanal Sayısı', client.channels.cache.size)
     message.channel.send(embed)
-  };
+    },
   }
 };
 
@@ -29,5 +29,5 @@ exports.conf = {
 exports.help = {
   name: 'stats', 
   description: 'Bot ile ilgili istatistikleri gösterir.', 
-  usage: 'stats' 
+  usage: 'stats all' 
 };
