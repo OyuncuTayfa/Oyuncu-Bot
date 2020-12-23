@@ -1,9 +1,9 @@
-exports.run = function(client, message) {
-  const { MessageEmbed } = require('discord.js')
-  const moment = require('moment')
-  require('moment-duration-format')
-  const os = require('os')
+const { MessageEmbed } = require('discord.js')
+const moment = require('moment')
+require('moment-duration-format')
+const os = require('os')
 
+exports.run = function(client, message) {
   module.exports = {
     kod: "stats",
     async run (client, message) {
@@ -19,7 +19,7 @@ exports.run = function(client, message) {
 
 exports.conf = {
   enabled: true, 
-  guildOnly: false, 
+  guildOnly: true, 
   aliases: ['stats'],
   permLevel: 0 
 };
