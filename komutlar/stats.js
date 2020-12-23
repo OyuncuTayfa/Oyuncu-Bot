@@ -8,7 +8,7 @@ exports.run = function(client, message, args) {
   
   module.exports = {
     kod: "stats",
-    if(stat == 'all') {
+    if(stat.content === 'all') {
     var embed = new Discord.RichEmbed() 
       .setTitle('İstatistik')
       .addField('Kullanıcı Sayısı', client.users.cache.size)
