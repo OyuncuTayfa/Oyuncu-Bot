@@ -3,7 +3,7 @@ const moment = require('moment')
 require('moment-duration-format')
 const os = require('os')
 module.exports = {
-  kod: "istatistik",
+  kod: "stats",
   async run (client, message) {
     const embed = new MessageEmbed()
     .setTitle('İstatistik')
@@ -17,7 +17,7 @@ module.exports = {
 exports.conf = {
   enabled: true, 
   guildOnly: false, 
-  aliases: ['istatistik','is','stats'],
+  aliases: ['stats'],
   permLevel: 0 
 };
 
