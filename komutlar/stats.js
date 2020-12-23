@@ -1,8 +1,9 @@
-const { MessageEmbed } = require('discord.js')
-const moment = require('moment')
-require('moment-duration-format')
-const os = require('os')
 exports.run = function(client, message) {
+  const { MessageEmbed } = require('discord.js')
+  const moment = require('moment')
+  require('moment-duration-format')
+  const os = require('os')
+
   module.exports = {
     kod: "stats",
     async run (client, message) {
