@@ -97,10 +97,10 @@ client.on('message', msg => {
 		msg.reply('ii ben de sağol sorduğun için.');
 	}
   if (msg.content.toLowerCase() === 'nabıyon') {
-		msg.reply('iyi işte, hayata tutunmaya çabalıyoz.');
+		msg.reply('iyi işte, Allaha Şükür şu koskoca dünyada hayatta kalmaya çalışıyoz');
 	}
   if (msg.content.toLowerCase() === 'napıyon') {
-		msg.reply('iyi işte, hayata tutunmaya çabalıyoz.');
+		msg.reply('iyi işte, Allaha Şükür şu koskoca dünyada hayatta kalmaya çalışıyoz');
 	}
 });
 
