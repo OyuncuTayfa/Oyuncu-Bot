@@ -7,7 +7,7 @@ exports.run = function(client, message, args) {
   module.exports = {
     kod: "stats",
     {
-    const embed = new MessageEmbed() 
+    var embed = new Discord.RichEmbed() 
     .setTitle('İstatistik')
     .addField('Kullanıcı Sayısı', client.users.cache.size)
     .addField('Sunucu Sayısı', client.guilds.cache.size)
