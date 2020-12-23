@@ -13,3 +13,16 @@ module.exports = {
     message.channel.send(embed)
   }
 }
+
+exports.conf = {
+  enabled: true, 
+  guildOnly: false, 
+  aliases: ['istatistik','is','stats'],
+  permLevel: 0 
+};
+
+exports.help = {
+  name: 'stats', 
+  description: 'Bot ile ilgili istatistikleri gösterir.', 
+  usage: 'stats' 
+};
