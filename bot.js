@@ -87,6 +87,21 @@ client.on('message', msg => {
   if (msg.content.toLowerCase() === 'sa') {
 		msg.reply('Aleyküm selam, hoş geldin.');
 	}
+  if (msg.content.toLowerCase() === 'hb') {
+		msg.reply('Nasılsın?');
+	}
+  if (msg.content.toLowerCase() === 'iyi sen') {
+		msg.reply('iyi ben de sağol sorduğun için.');
+	}
+  if (msg.content.toLowerCase() === 'ii sen') {
+		msg.reply('ii ben de sağol sorduğun için.');
+	}
+  if (msg.content.toLowerCase() === 'nabıyon') {
+		msg.reply('iyi işte, hayata tutunmaya çabalıyoz.');
+	}
+  if (msg.content.toLowerCase() === 'napıyon') {
+		msg.reply('iyi işte, hayata tutunmaya çabalıyoz.');
+	}
 });
 
 ///////////////////////////////
