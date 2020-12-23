@@ -6,14 +6,12 @@ const os = require('os')
 exports.run = function(client, message, args) {
   module.exports = {
     kod: "stats",
-    async run (client, message) {
-      const embed = new MessageEmbed()
-      .setTitle('İstatistik')
-      .addField('Kullanıcı Sayısı', client.users.cache.size)
-      .addField('Sunucu Sayısı', client.guilds.cache.size)
-      .addField('Kanal Sayısı', client.channels.cache.size)
-      message.channel.send(embed)
-    }
+    const embed = new MessageEmbed()
+    .setTitle('İstatistik')
+    .addField('Kullanıcı Sayısı', client.users.cache.size)
+    .addField('Sunucu Sayısı', client.guilds.cache.size)
+    .addField('Kanal Sayısı', client.channels.cache.size)
+    message.channel.send(embed)
   }
 };
 
