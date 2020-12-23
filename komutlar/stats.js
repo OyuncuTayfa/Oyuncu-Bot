@@ -6,14 +6,12 @@ const os = require('os')
 exports.run = function(client, message, args) {
   module.exports = {
     kod: "stats",
-    {
     var embed = new Discord.RichEmbed() 
-    .setTitle('İstatistik')
-    .addField('Kullanıcı Sayısı', client.users.cache.size)
-    .addField('Sunucu Sayısı', client.guilds.cache.size)
-    .addField('Kanal Sayısı', client.channels.cache.size)
+      .setTitle('İstatistik')
+      .addField('Kullanıcı Sayısı', client.users.cache.size)
+      .addField('Sunucu Sayısı', client.guilds.cache.size)
+      .addField('Kanal Sayısı', client.channels.cache.size)
     message.channel.send(embed)
-  };
   }
 };
 
