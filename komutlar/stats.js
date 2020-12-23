@@ -3,7 +3,7 @@ const moment = require('moment')
 require('moment-duration-format')
 const os = require('os')
 
-exports.run = function(client, message) {
+exports.run = function(client, message, args) {
   module.exports = {
     kod: "stats",
     async run (client, message) {
