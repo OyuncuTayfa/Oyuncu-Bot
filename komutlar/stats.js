@@ -21,7 +21,7 @@ exports.run = function(client, message, args) {
 
 exports.conf = {
   enabled: true, 
-  guildOnly: true, 
+  guildOnly: false, 
   aliases: ['stats'],
   permLevel: 0 
 };
@@ -29,5 +29,5 @@ exports.conf = {
 exports.help = {
   name: 'stats', 
   description: 'Bot ile ilgili istatistikleri gösterir.', 
-  usage: 'stats all' 
+  usage: 'stats' 
 };
