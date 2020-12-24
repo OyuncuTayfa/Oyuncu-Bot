@@ -102,6 +102,9 @@ client.on('message', msg => {
   if (msg.content.toLowerCase() === 'napıyon') {
 		msg.reply('iyi işte, Allaha Şükür şu koskoca dünyada hayatta kalmaya çalışıyoz');
 	}
+  if (msg.content.toLowerCase() === 'bişiler gelcek var mı') {
+		msg.reply('Galiba sadece ben varım');
+	}
 });
 
 ///////////////////////////////
