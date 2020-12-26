@@ -12,10 +12,10 @@ exports.run = function(client, message) {
 };
 
 exports.conf = {
-  enabled: false, 
+  enabled: true, 
   guildOnly: false, 
   aliases: ['deneme'],
-  permLevel: 0 
+  permLevel: 4 
 };
 
 exports.help = {
