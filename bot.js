@@ -91,10 +91,10 @@ client.on('message', msg => {
 		msg.reply('Nasılsın cnm?');
 	}
   if (msg.content.toLowerCase() === 'iyi sen') {
-		msg.reply('iyi ben de sağol sorduğun için.');
+		msg.reply('iyi ben de sağ ol sorduğun için.');
 	}
   if (msg.content.toLowerCase() === 'ii sen') {
-		msg.reply('ii ben de sağol sorduğun için.');
+		msg.reply('ii ben de sağ ol sorduğun için.');
 	}
   if (msg.content.toLowerCase() === 'nabıyon') {
 		msg.reply('iyi işte, Allaha Şükür şu koskoca dünyada hayatta kalmaya çalışıyoz');
