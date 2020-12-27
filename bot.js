@@ -88,7 +88,7 @@ client.on('message', msg => {
 		msg.reply('Aleyküm selam, hoş geldin.');
 	}
   if (msg.content.toLowerCase() === 'hb cnm') {
-		msg.reply('Nasılsın?');
+		msg.reply('Nasılsın cnm?');
 	}
   if (msg.content.toLowerCase() === 'iyi sen') {
 		msg.reply('iyi ben de sağol sorduğun için.');
