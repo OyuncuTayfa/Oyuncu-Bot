@@ -105,6 +105,9 @@ client.on('message', msg => {
   if (msg.content.toLowerCase() === 'bişiler gelcek var mı') {
 		msg.reply('Galiba sadece ben varım');
 	}
+  if (msg.content.toLowerCase() === 'ohayo') {
+		msg.channel.send('ohayo');
+	}
 });
 
 ///////////////////////////////
