@@ -9,6 +9,7 @@ exports.run = function(client, message, args) {
 
 	var cevap1 = cevaplar[Math.floor(Math.random() * cevaplar.length)];
     if (!cevap) return message.reply('Lütfen bir sembol seç. **Doğru Kullanım** : -tkm <:fist:,:hand_splayed:,:v:>')
+    if (cevap === !cevaplar) return message.reply('Lütfen geçerli bir sembol seç. **Doğru Kullanım** : -tkm <:fist:,:hand_splayed:,:v:>')
     message.channel.send(stripIndents`
     __SEN__    __BEN__
     ${cevap} : ${cevap1}
