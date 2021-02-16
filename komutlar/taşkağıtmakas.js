@@ -15,7 +15,7 @@ if (cevap === ':raised_hand:') {
 
 } else if (cevap === ':v:') {
 
-} else message.replt('Lütfen **geçerli** bir sembol seç. **Doğru Kullanım** : -tkm <:fist:,:raised_hand:,:v:>')
+} else message.reply('Lütfen **geçerli** bir sembol seç. **Doğru Kullanım** : -tkm <:fist:,:raised_hand:,:v:>')
 
 };
 
