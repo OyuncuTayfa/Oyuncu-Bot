@@ -10,18 +10,18 @@ exports.run = function(client, message, args) {
 	var cevap1 = cevaplar[Math.floor(Math.random() * cevaplar.length)];
     if (!cevap) return message.reply('Lütfen bir sembol seç. **Doğru Kullanım** : -tkm <:fist:,:hand_splayed:,:v:>')
     message.channel.send(stripIndents`
-    __SEN__  __BEN__
+     __SEN__  __BEN__
     ${cevap} : ${cevap1}
     `)
 	if (cevap === cevap1) {
 		message.channel.send(stripIndents`
-        __SEN__   __BEN__
+         __SEN__   __BEN__
         ${cevap} : ${cevap1}
 		Eyvah Berabere Kaldık.
 		`); 
 	} else if (cevap === ':v:' && cevap1 === ':hand_splayed:') {
         message.channel.send(stripIndents`
-        __SEN__   __BEN__
+         __SEN__   __BEN__
         ${cevap} : ${cevap1}
         Makas Kağıdı keser sen kazandın.
 		`);	
