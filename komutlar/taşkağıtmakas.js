@@ -28,7 +28,7 @@ exports.conf = {
 
 exports.help = {
   name: 'taşkağıtmakas', 
-  description: 'Taş Kağıt Makas oyunu oynatır',
+  description: 'Taş Kağıt Makas oyunu oynatır. (Bakımda)',
   usage: 'taşkağıtmakas'
 };
 
