@@ -28,6 +28,6 @@ exports.conf = {
 
 exports.help = {
   name: 'stats', 
-  description: 'Bot ile ilgili istatistikleri gösterir. *(Bakımda)*', 
+  description: 'Bot ile ilgili istatistikleri gösterir. (Bakımda)', 
   usage: 'stats' 
 };
