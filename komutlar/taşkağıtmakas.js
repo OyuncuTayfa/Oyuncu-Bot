@@ -15,7 +15,7 @@ if (cevap === ':raised_hand:') {
 		  __SEN__   __BEN__
 		  ${cevap} : ${cevap1}
 		  Eyvah Berabere Kaldık.
-		  `
+		  `);
 	};
 } else if (cevap === ':fist:') {
 
