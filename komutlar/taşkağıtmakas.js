@@ -12,10 +12,10 @@ exports.run = function(client, message, args) {
 if (cevap === ':raised_hand:') {
 	if (cevap1 === ':raised_hand:')	{
 		message.channel.send(stripIndents`
-		__SEN__   __BEN__
-		${cevap} : ${cevap1}
-		Eyvah Berabere Kaldık.
-		`
+		  __SEN__   __BEN__
+		  ${cevap} : ${cevap1}
+		  Eyvah Berabere Kaldık.
+		  `
 	};
 } else if (cevap === ':fist:') {
 
