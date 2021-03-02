@@ -10,7 +10,13 @@ exports.run = function(client, message, args) {
 	var cevap1 = cevaplar[Math.floor(Math.random() * cevaplar.length)];
     if (!cevap) return message.reply('Lütfen bir sembol seç. **Doğru Kullanım** : -tkm <:fist:,:raised_hand:,:v:>')
 if (cevap === ':raised_hand:') {
-	
+	if (cevap1 === ':raised_hand:')	{
+		message.channel.send(stripIndents`
+		__SEN__   __BEN__
+		${cevap} : ${cevap1}
+		Eyvah Berabere Kaldık.
+		`
+	};
 } else if (cevap === ':fist:') {
 
 } else if (cevap === ':v:') {
