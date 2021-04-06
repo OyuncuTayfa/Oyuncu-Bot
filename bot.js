@@ -10,7 +10,6 @@ require('./util/eventLoader')(client);
 
 
 
-
 var prefix = ayarlar.prefix;
 
 const log = message => {
