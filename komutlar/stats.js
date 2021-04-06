@@ -8,7 +8,7 @@ exports.run = function(client, message, args) {
   
   module.exports = {
     kod: "stats",
-    if(stat === 'all') {
+    if(_stat = 'all') {
     var embed = new Discord.RichEmbed() 
       .setTitle('İstatistik')
       .addField('Kullanıcı Sayısı', client.users.cache.size)
@@ -20,7 +20,7 @@ exports.run = function(client, message, args) {
 };
 
 exports.conf = {
-  enabled: true, 
+  enabled: false, 
   guildOnly: false, 
   aliases: ['stats'],
   permLevel: 4 
