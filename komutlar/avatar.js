@@ -13,7 +13,10 @@ exports.run = function(client, message, args) {
         const member = message.guild.member(user);
         
         if(member) {
-        
+            var embedd = new Discord.RichEmbed()
+                .setAuthor(member.tag)
+                .setImage(member.avatarURL)
+            message.channel.send(embedd);
         }
     }
 };
