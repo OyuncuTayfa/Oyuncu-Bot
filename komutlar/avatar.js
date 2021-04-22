@@ -9,8 +9,12 @@ exports.run = function(client, message, args) {
             .setAuthor(message.author.tag)
             .setImage(message.author.avatarURL)
         message.channel.send(embed);
-    } else {
-        message.channel.send('bos');
+    } else if (user) {
+        const member = message.guild.member(user);
+        
+        if(member) {
+        
+        }
     }
 };
 
