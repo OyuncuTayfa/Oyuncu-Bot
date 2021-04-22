@@ -5,7 +5,7 @@ exports.run = function(client, message) {
     var kisi = args.join(' ');
     const user = message.mentions.users.first();
     if(!kisi)
-        const embed = new Discord.RichEmbed()
+        var embed = new Discord.RichEmbed()
             .setAuthor(message.author.tag)
             .setImage(message.author.avatarURL)
         message.channel.send(embed);
