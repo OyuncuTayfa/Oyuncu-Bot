@@ -1,10 +1,10 @@
 const Discord = require('discord.js');
 
 
-exports.run = function(client, message) {
+exports.run = function(client, message, args) {
     var kisi = args.join(' ');
     const user = message.mentions.users.first();
-    if(!kisi) return {
+    if(!kisi) {
         var embed = new Discord.RichEmbed()
             .setAuthor(message.author.tag)
             .setImage(message.author.avatarURL)
