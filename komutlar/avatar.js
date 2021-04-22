@@ -14,8 +14,8 @@ exports.run = function(client, message, args) {
         
         if(member) {
             var embedd = new Discord.RichEmbed()
-                .setAuthor(member.tag)
-                .setImage(member.avatarURL)
+                .setAuthor(user.tag)
+                .setImage(user.avatarURL)
             message.channel.send(embedd);
         }
     }
