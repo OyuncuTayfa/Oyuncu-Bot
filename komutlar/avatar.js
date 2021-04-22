@@ -9,7 +9,9 @@ exports.run = function(client, message) {
             .setAuthor(message.author.tag)
             .setImage(message.author.avatarURL)
         message.channel.send(embed);
-    } else
+    } else {
+        message.channel.send('bos');
+    }
 };
 
 exports.conf = {
