@@ -83,7 +83,7 @@ client.unload = command => {
 
 client.on('message', msg => {
   if (msg.content.toLowerCase() === 's.a') {
-		msg.reply('Aleyküm selam, hoş geldin.');
+		msg.channel.send('s.a');
 	}
   if (msg.content.toLowerCase() === 'hb cnm') {
 		msg.reply('Nasılsın cnm?');
