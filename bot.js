@@ -111,9 +111,6 @@ client.on('message', msg => {
   if (msg.content.toLowerCase() === 'omayo') {
 		msg.reply('omayo');
 	}
-  if (msg.content.toLowerCase() === 'xd') {
-		msg.channel.send('xd');
-	}
 });
 
 ///////////////////////////////
