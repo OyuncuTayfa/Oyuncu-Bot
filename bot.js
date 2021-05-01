@@ -112,7 +112,7 @@ client.on('message', msg => {
 		msg.reply('omayo');
 	}
   if (msg.content.toLowerCase() === 'xd') {
-		msg.channel.send('xd');
+		msg.channel.send('xd);
 	}
 });
 
