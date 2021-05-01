@@ -108,6 +108,9 @@ client.on('message', msg => {
   if (msg.content.toLowerCase() === 'konbanwa') {
 		msg.reply('konbanwa');
 	}
+  if (msg.content.toLowerCase() === 'omayo') {
+		msg.reply('omayo');
+	}
 });
 
 ///////////////////////////////
