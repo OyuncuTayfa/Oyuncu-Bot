@@ -103,13 +103,13 @@ client.on('message', msg => {
 		msg.reply('Galiba sadece ben varım');
 	}
   if (msg.content.toLowerCase() === 'ohayo') {
-		msg.reply('ohayogozaimasu');
+		msg.reply('Ohayo onii-chan');
 	}
   if (msg.content.toLowerCase() === 'konbanwa') {
 		msg.reply('konbanwa');
 	}
   if (msg.content.toLowerCase() === 'omayo') {
-		msg.reply('omayo');
+		msg.reply('sana da omayo');
 	}
 });
 
