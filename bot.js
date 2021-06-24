@@ -84,32 +84,14 @@ client.on('message', msg => {
   if (msg.content.toLowerCase() === 's.a') {
 		msg.reply('Aleyküm selam, hoş geldin.');
 	}
-  if (msg.content.toLowerCase() === 'hb cnm') {
-		msg.reply('Nasılsın cnm?');
-	}
-  if (msg.content.toLowerCase() === 'iyi sen') {
-		msg.reply('iyi ben de sağ ol sorduğun için.');
-	}
-  if (msg.content.toLowerCase() === 'ii sen') {
-		msg.reply('ii ben de sağ ol sorduğun için.');
-	}
-  if (msg.content.toLowerCase() === 'nabıyon') {
-		msg.reply('iyi işte, Allaha Şükür şu koskoca dünyada hayatta kalmaya çalışıyoz');
-	}
-  if (msg.content.toLowerCase() === 'napıyon') {
-		msg.reply('iyi işte, Allaha Şükür şu koskoca dünyada hayatta kalmaya çalışıyoz');
-	}
   if (msg.content.toLowerCase() === 'bişiler gelcek var mı') {
-		msg.reply('Galiba sadece ben varım');
+		msg.reply('Ben varım olmaz mı :pleading_face:');
 	}
   if (msg.content.toLowerCase() === 'ohayo') {
 		msg.reply('Ohayo onii-chan');
 	}
-  if (msg.content.toLowerCase() === 'konbanwa') {
-		msg.reply('konbanwa');
-	}
   if (msg.content.toLowerCase() === 'omayo') {
-		msg.reply('sana da omayo');
+		msg.reply('Sana da omayo');
 	}
 });
 
